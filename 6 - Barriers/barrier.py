@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-""" Deciding how many bags of chips to buy for the party """
+"""
+Barrier example (see README in this folder).
+
+Demonstrates `threading.Barrier` to synchronize a group of threads at a
+common rendezvous point. In this example Barron and Olivia perform a
+bit of work, then rendezvous on a barrier so that certain operations
+occur in a coordinated way.
+"""
 
 import threading
 

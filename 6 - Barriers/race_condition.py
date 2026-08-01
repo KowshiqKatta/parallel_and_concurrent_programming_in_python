@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Deciding how many bags of chips to buy for the party """
+"""
+Race condition example (see README in this folder).
+
+Shows a simple concurrent update pattern for a shared variable. Use
+the safe demos included in this folder to experiment with barrier vs
+no-barrier behavior and to observe race/final-value differences.
+"""
 
 import threading
 
