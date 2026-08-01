@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-""" Chopping vegetables with a ThreadPool """
+"""
+Process pool example (see README in this folder).
 
-import threading
-from concurrent.futures import ProcessPoolExecutor
+Uses `concurrent.futures.ProcessPoolExecutor` to run tasks in separate
+processes. Process pools are suitable for CPU-bound tasks and can
+utilize multiple cores.
+"""
+
 import os
+from concurrent.futures import ProcessPoolExecutor
 
 def vegetable_chopper(vegetable_id):
-    name = os.getpid()
-    print(name, 'chopped a vegetable', vegetable_id)
+    pid = os.getpid()
+    print(pid, 'chopped a vegetable', vegetable_id)
 
 if __name__ == '__main__':
     with ProcessPoolExecutor(max_workers=5) as pool:

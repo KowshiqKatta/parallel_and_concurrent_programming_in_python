@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-""" Recursively sum a range of numbers """
+"""
+Divide-and-conquer example (see README in this folder).
+
+Uses `ProcessPoolExecutor` to split a large summation task across
+processes using a recursive divide-and-conquer approach. The original
+example returns futures — the safe demo includes a finite, materialized
+sum for experiments.
+"""
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
 

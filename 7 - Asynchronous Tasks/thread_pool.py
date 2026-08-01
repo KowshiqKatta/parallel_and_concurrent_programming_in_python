@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Chopping vegetables with a ThreadPool """
+"""
+Thread pool example (see README in this folder).
+
+Uses `concurrent.futures.ThreadPoolExecutor` to run many small tasks
+concurrently. Threads are useful for I/O-bound work; for CPU-bound
+tasks prefer process pools.
+"""
 
 import threading
 from concurrent.futures import ThreadPoolExecutor
