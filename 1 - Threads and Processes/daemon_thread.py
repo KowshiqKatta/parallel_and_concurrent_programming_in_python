@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Barron finishes cooking while Olivia cleans """
+"""
+Daemon thread example (see README in this folder).
+
+Demonstrates a background (daemon) thread that runs while the
+main thread executes; the daemon thread is terminated automatically
+when the main program exits.
+"""
 
 import threading
 import time

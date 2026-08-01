@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-""" Threads that waste CPU cycles """
+"""
+Multiple processes example (see README in this folder).
+
+This script starts multiple OS processes that run a busy loop. It's
+intended to demonstrate how `multiprocessing` can utilize multiple
+CPU cores (unlike CPU-bound threads under the GIL). Use with care —
+these processes will consume CPU until killed.
+"""
 
 import os
 import threading

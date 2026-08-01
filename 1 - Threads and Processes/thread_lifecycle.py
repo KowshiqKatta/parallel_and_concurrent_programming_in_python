@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Two threads cooking soup """
+"""
+Thread lifecycle example (see README in this folder).
+
+Shows a `Thread` subclass, starting the thread, checking `is_alive()`,
+and using `join()` to wait for completion — common patterns for
+coordinating worker threads.
+"""
 
 import threading
 import time

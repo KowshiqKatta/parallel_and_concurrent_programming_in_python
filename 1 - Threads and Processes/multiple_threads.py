@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Threads that waste CPU cycles """
+"""
+Multiple threads example (see README in this folder).
+
+Starts several threads that run busy loops. In CPython this will not
+achieve true multi-core parallelism for CPU-bound work because of the
+GIL — compare with the `multiple_processes.py` example.
+"""
 
 import os
 import threading

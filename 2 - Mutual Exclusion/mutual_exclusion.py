@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-""" Two shoppers adding items to a shared notepad """
+"""
+Mutual exclusion example (see README in this folder).
+
+Two threads coordinate increments to a shared counter using a
+`threading.Lock()` (named `pencil` here). This prevents race
+conditions by ensuring only one thread updates the shared value at a
+time.
+"""
 
 import threading
 import time

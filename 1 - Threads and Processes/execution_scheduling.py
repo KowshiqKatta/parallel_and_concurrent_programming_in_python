@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Two threads chopping vegetables """
+"""
+Execution scheduling example (see README in this folder).
+
+Two threads perform repeated work controlled by a shared flag. This
+example illustrates scheduler-driven interleaving and how the GIL
+affects thread execution for CPU-bound loops.
+"""
 
 import threading
 import time

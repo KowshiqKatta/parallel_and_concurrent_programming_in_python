@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-""" Two shoppers adding items to a shared notepad """
+"""
+Data race example (see README in this folder).
+
+Two threads increment a shared counter without synchronization. This
+can lead to incorrect results due to a race condition. The original
+example uses a large number of iterations — use the safe demo files
+for repeatable experiments.
+"""
 
 import threading
 
