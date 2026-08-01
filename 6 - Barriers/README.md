@@ -49,8 +49,3 @@ Notes:
 - Vary the number of pairs/participants in the safe demos and observe timings.
 - Introduce a faulty participant (never arrives) to see barrier blocking.
 - Combine barriers with other primitives (locks, conditions) for multi-phase algorithms.
-
-## Attribution
-Examples are based on an instructional course; the user provided a
-course screenshot to clarify the learning goals for the `Barriers`
-section.
