@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Producers serving soup for Consumers to eat """
+"""
+Producer-consumer (processes) example (see README in this folder).
+
+Uses `multiprocessing.Queue` to coordinate producers and consumers in
+separate processes. The consumer simulates CPU-bound work to show how
+processes can keep CPU busy without being limited by the GIL.
+"""
 
 import queue
 import multiprocessing as mp

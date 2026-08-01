@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Producers serving soup for Consumers to eat """
+"""
+Producer-consumer (threads) example (see README in this folder).
+
+Uses `queue.Queue` for thread-safe producer/consumer coordination. The
+producer fills the queue and consumers take items; a sentinel value is
+used to indicate completion.
+"""
 
 import queue
 import threading

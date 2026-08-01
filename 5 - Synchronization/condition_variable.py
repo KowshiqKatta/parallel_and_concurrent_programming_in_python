@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Two hungry people, anxiously waiting for their turn to take soup """
+"""
+Condition variable example (see README in this folder).
+
+Demonstrates `threading.Condition` used to coordinate threads waiting
+for a specific condition before proceeding. Here each person waits for
+their turn to take soup and uses `notify_all()` to wake others.
+"""
 
 import threading
 

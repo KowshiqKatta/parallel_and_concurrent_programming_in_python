@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Connecting cell phones to a charger """
+"""
+Semaphore example (see README in this folder).
+
+Uses `threading.Semaphore` to limit concurrent access to a shared
+resource (charging stations). Demonstrates the simple concurrency
+throttling pattern.
+"""
 
 import random
 import threading
