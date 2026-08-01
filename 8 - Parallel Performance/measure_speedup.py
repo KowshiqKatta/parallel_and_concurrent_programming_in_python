@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-""" Measure the speedup of a parallel algorithm """
+"""
+Measure the speedup of a parallel algorithm (original educational script).
+
+This file contains a recursive divide-and-conquer parallel summation that
+returns futures when given a pool. It's left intact as the original
+demonstration; see `measure_speedup_safe.py` for a finite, benchmark-ready
+variant suitable for experiments on modern machines.
+"""
 
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import multiprocessing as mp
@@ -9,7 +16,7 @@ import time
 def seq_sum(lo, hi):
     return sum(range(lo, hi))
 
-""" parallel implementation """
+""" parallel implementation (returns futures when passed a pool) """
 def par_sum(lo, hi, pool=None):
     if not pool:
         with ProcessPoolExecutor() as executor:
@@ -25,6 +32,9 @@ def par_sum(lo, hi, pool=None):
             return left + right
 
 if __name__ == '__main__':
+    # Default values used by the original example; these may be large on
+    # modern machines and will take a long time. Prefer using
+    # `measure_speedup_safe.py` for quick experiments.
     NUM_EVAL_RUNS = 1
     SUM_VALUE = 100_000_000
 
