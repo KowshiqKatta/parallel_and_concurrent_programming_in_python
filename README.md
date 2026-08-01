@@ -76,8 +76,3 @@ Contributing
 
 License
 - This collection is intended for educational use. Add or replace with a license of your choice if you plan to redistribute widely.
-
-If you want, I can also:
-- Add CSV output and CLI flags to the comparison harnesses for automated measurement collection.
-- Produce a single Jupyter notebook that runs selected experiments and plots results.
-- Create short exercises and automated test harnesses for interview practice.
