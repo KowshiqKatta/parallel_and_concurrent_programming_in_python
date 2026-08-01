@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Solution: Sort an array of random integers with merge sort """
+"""
+Solution: Sort an array of random integers with merge sort.
+
+Includes sequential and process-parallel versions. For quicker
+experiments use `merge_sort_safe.py` which performs chunked parallel
+sorting using worker processes and then merges results.
+"""
 
 import random
 import time

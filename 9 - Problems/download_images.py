@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-""" Challenge: Download a collection of images """
+"""
+Challenge: Download a collection of images.
+
+Original example downloads many images sequentially and with a thread
+pool to demonstrate I/O-bound parallelism. See `README.md` in this
+folder for safe demo scripts that avoid network dependency and are
+designed for quick, repeatable experiments.
+"""
 
 import time
 import urllib.request

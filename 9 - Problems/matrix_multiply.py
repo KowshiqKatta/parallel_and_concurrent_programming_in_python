@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Solution: Multiply two matrices """
+"""
+Solution: Multiply two matrices.
+
+This module shows a sequential matrix multiply and a process-based
+parallel worker implementation. See `matrix_multiply_safe.py` for a
+smaller, benchmark-friendly runner and `README.md` for instructions.
+"""
 
 import random
 import time
