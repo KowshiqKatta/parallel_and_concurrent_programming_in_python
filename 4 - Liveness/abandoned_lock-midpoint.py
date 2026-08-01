@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Three philosophers, thinking and eating sushi """
+"""
+Abandoned lock (midpoint) example (see README in this folder).
+
+Shows explicit `acquire()` / `release()` usage and the recommended
+`try/finally` pattern to ensure locks are released even when
+exceptions occur. Also demonstrates using `with` as a context manager.
+"""
 
 import threading
 
@@ -12,11 +18,13 @@ some_lock = threading.Lock()
 some_lock.acquire()
 try:
     # do something...
+    pass
 finally:
     some_lock.release()
 
 with some_lock:
     #do something...
+    pass
 
 def philosopher(name, first_chopstick, second_chopstick):
     global sushi_count

@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Three philosophers, thinking and eating sushi """
+"""
+Starvation example (see README in this folder).
+
+Shows how some threads may be perpetually denied access to resources
+when contention and scheduling bias exist. This example launches many
+threads competing for the same locks and reports per-thread counts.
+"""
 
 import threading
 

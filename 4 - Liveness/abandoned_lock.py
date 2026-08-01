@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Three philosophers, thinking and eating sushi """
+"""
+Abandoned lock example (see README in this folder).
+
+Shows how exceptions inside a critical section can lead to locks being
+left in inconsistent states if not handled correctly — use `try/finally`
+or context managers to ensure locks are always released.
+"""
 
 import threading
 

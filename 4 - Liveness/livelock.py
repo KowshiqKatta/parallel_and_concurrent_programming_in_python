@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Three philosophers, thinking and eating sushi """
+"""
+Livelock example (see README in this folder).
+
+Threads repeatedly attempt to make progress but back off in ways that
+prevent any from making forward progress — a livelock. This example
+uses non-blocking acquire with polite release and randomized backoff.
+"""
 
 import threading
 import time

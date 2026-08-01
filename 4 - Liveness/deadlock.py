@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-""" Three philosophers, thinking and eating sushi """
+"""
+Deadlock example (see README in this folder).
+
+Classic deadlock: multiple threads acquire locks in different orders
+which can lead to a circular wait where everyone blocks forever.
+"""
 
 import threading
 

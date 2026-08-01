@@ -55,7 +55,3 @@ Notes:
 ## Attribution
 Examples are based on an instructional course; the user provided a screenshot of the course contents to clarify the learning goals for the `Locks` section.
 
----
-If you want, I can:
-- Add CSV output to `compare_locks.py` for exporting results, or
-- Create a small Jupyter notebook that runs parameter sweeps and plots timing/throughput.
