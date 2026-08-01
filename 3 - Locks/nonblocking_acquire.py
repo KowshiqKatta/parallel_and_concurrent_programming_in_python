@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Two shoppers adding items to a shared notepad """
+"""
+Non-blocking acquire example (see README in this folder).
+
+Shows `Lock.acquire(blocking=False)` to attempt a lock without
+blocking — useful when a thread wants to try a critical section and
+do other work if the resource is busy.
+"""
 
 import threading
 import time

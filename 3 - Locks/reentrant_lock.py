@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-""" Two shoppers adding garlic and potatoes to a shared notepad """
+"""
+Reentrant lock example (see README in this folder).
+
+Demonstrates `threading.RLock()` (re-entrant lock) where a thread
+that already holds the lock can acquire it again. This is useful when
+one locked function calls another that also acquires the same lock.
+"""
 
 import threading
 

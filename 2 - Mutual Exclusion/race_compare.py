@@ -20,8 +20,7 @@ def main():
     val_l, time_l = run_locked(num_threads=threads, iterations=iterations)
     print(f'  Locked result = {val_l}, time = {time_l:.3f}s')
 
-    print('\nNote: On CPython the GIL may mask some race symptoms for simple
-operations, so results can vary across builds and platforms.')
+    print('\nNote: On CPython the GIL may mask some race symptoms for simpleoperations, so results can vary across builds and platforms.')
 
 if __name__ == '__main__':
     main()
